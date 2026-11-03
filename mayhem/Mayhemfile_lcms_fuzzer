@@ -1,0 +1,10 @@
+project: savantenvs/lcms
+target: lcms_fuzzer
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/lcms_fuzzer/testsuite
+cmds:
+  - cmd: /mayhem/lcms_fuzzer
+    libfuzzer: true
+    dictionary: /mayhem/mayhem/lcms_fuzzer/lcms_fuzzer.dict
+    timeout: 10

@@ -1,0 +1,6 @@
+project: savantenvs/lcms
+target: cms_cie_cam02_fuzzer
+cmds:
+  - cmd: /mayhem/cms_cie_cam02_fuzzer
+    libfuzzer: true
+    timeout: 10

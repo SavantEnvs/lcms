@@ -1,0 +1,6 @@
+project: savantenvs/lcms
+target: cms_dict_fuzzer
+cmds:
+  - cmd: /mayhem/cms_dict_fuzzer
+    libfuzzer: true
+    timeout: 10

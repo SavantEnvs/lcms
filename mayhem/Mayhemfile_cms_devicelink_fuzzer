@@ -1,0 +1,6 @@
+project: savantenvs/lcms
+target: cms_devicelink_fuzzer
+cmds:
+  - cmd: /mayhem/cms_devicelink_fuzzer
+    libfuzzer: true
+    timeout: 10

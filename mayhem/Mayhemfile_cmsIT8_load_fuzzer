@@ -1,0 +1,9 @@
+project: savantenvs/lcms
+target: cmsIT8_load_fuzzer
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/cmsIT8_load_fuzzer/testsuite
+cmds:
+  - cmd: /mayhem/cmsIT8_load_fuzzer
+    libfuzzer: true
+    timeout: 10

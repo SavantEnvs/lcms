@@ -1,0 +1,6 @@
+project: savantenvs/lcms
+target: cms_gdb_fuzzer
+cmds:
+  - cmd: /mayhem/cms_gdb_fuzzer
+    libfuzzer: true
+    timeout: 10

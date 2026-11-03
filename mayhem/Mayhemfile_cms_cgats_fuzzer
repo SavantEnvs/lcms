@@ -1,0 +1,6 @@
+project: savantenvs/lcms
+target: cms_cgats_fuzzer
+cmds:
+  - cmd: /mayhem/cms_cgats_fuzzer
+    libfuzzer: true
+    timeout: 10
